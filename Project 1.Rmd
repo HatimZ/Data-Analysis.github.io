@@ -1,4 +1,6 @@
----
+--------------------NO COPYING-------------------------------------------------------------
+SOME PARTS ARE MISSING TO AVOID USERS FROM COPYING.
+IF YOU WANT FULLY FUCNTIONAL CODE< CONTACT ME>
 title: "| Spring 2020  \n| GE 461 Introduction to Data Science \n"
 author: "| Hatim Zahid - 21603260"
 always_allow_html: yes
@@ -382,7 +384,6 @@ This tests are done by taking each variable out from the model and then comparin
 ```{r}
 set.seed(461)
 options(warn=-1)
-nfolds <- 5
 folds <- rep(seq(5), nrow(d2), len=nrow(d2)) %>% sample()
 rmse_lmod <- rep(NA, nfolds)
 rmse_lmod_interaction <- rep(NA, nfolds)
@@ -473,8 +474,6 @@ folds <- rep(seq(5), nrow(d2), len=nrow(d2)) %>% sample()
 rmse_lmod <- rep(NA, nfolds)
 rmse_lmod_interaction <- rep(NA, nfolds)
 
-lmodnew <-  update(lmod, . ~ . )
-lmod_interaction <- update(lmod, . ~ . + temp: day_night )
 
 for (i in seq(nfolds)){
 train <- d2[folds!=i,]
@@ -524,10 +523,6 @@ lmod_train <- update(lmodnew, data = train)
 lmod_test <- predict(lmod_train, newdata = test)
 rmse_lmod[i] <- (test$attend - lmod_test)^2 %>% mean() %>% sqrt()
 
-# train lm with interaction model
-lmod_interaction_train <- update(lmod_interaction, data = train)
-lmod_interaction_test <- suppressWarnings(predict(lmod_interaction_train, newdata = test))
-rmse_lmod_interaction[i] <- (test$attend - lmod_interaction_test)^2 %>% mean() %>% sqrt()
 }
 cv <- tibble(lmod = rmse_lmod, lmod_interaction = rmse_lmod_interaction) %>%
 mutate(dif_rmse = rmse_lmod - rmse_lmod_interaction)
