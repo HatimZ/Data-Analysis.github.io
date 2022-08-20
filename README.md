@@ -29,8 +29,10 @@ Factors affecting the attendance
 This project is a mix of exploratory data analysis and Statistics.
 Simple Exploratory Data Analysis is used where graphs such as:
 
-* Box and Whisker Plots
+* Box and Whisker Plots                                                                                ![My Image](capture2.png)
 * Line Graphs
+
+
 
 are used and Statistical tests such as
 
