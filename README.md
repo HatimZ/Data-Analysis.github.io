@@ -6,7 +6,8 @@
 
 The Dodgers is a professional baseball team and plays in the Major Baseball League. The team owns a 56,000-seat stadium and is interested in increasing the attendance of their fans during home games.*At the moment the team management would like to know if bobblehead promotions increase the attendance of the team’s fans* ?
 
-![App Screenshot](/data-analysis/los_angeles-dodgers-stadium.jpg?raw=true "Optional Title")
+
+![My Image](los_angeles-dodgers-stadium.jpg)
 
 
 
