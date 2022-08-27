@@ -55,7 +55,7 @@ Example
 
 Please check hosted R Markdown file, it has a dedicated contents page to guide you and all the details you will need along with code examples.
 
-* https://hatimz.github.io/data-analysis/
+* https://hatimz.github.io/Data-analysis-using-Linear-Algebra-with-R/
 
 
 
